@@ -12,7 +12,7 @@ namespace SteveToRestaurants.Pages
 
         public void OnGet()
         {
-            Message = "AbSteveTech Contact Point.";
+            Message = "AbSteveTech (ASP.NET Core Restaurant Project for Inmemory)";
         }
     }
 }
