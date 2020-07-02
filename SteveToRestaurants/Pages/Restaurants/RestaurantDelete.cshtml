@@ -1,0 +1,19 @@
+﻿@page "{restaurantId}"
+
+@model SteveToRestaurants.Pages.Restaurants.RestaurantDeleteModel
+@{
+    ViewData["Title"] = "RestaurantDelete";
+}
+
+<h2>Restaurant Delete</h2>
+
+<div class="alert alert-danger">
+    Are you sure want to delete @Model.Restaurant.Name?
+</div>
+
+<form method="post">
+    @*<button type="button" calss="btn btn-danger">Yes</button>*@
+    <button type="submit" class="btn btn-danger">Yes</button>
+    <a asp-page="./RestaurantList" class="btn btn-default">Cancel</a>
+
+</form>

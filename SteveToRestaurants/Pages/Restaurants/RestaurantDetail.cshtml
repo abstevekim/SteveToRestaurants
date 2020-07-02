@@ -1,0 +1,59 @@
+﻿@page   "{restaurantId:int}"
+
+@model SteveToRestaurants.Pages.Restaurants.RestaurantDetailModel
+@{
+    ViewData["Title"] = "RestaurantDetail";
+}
+
+<h2>@Model.Restaurant.Name</h2>
+<br />
+
+@*<div>
+    Id: @Model.Restaurant.Id
+</div>
+<div>
+    Location: @Model.Restaurant.Location
+</div>
+<div>
+    Cuisine: @Model.Restaurant.Cuisine
+</div>*@
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-2">
+            Id:
+        </div>
+        <div class="col-md-4">
+            @Model.Restaurant.Id
+        </div>
+        <div class="col-md-6">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            Location:
+        </div>
+        <div class="col-md-4">
+            @Model.Restaurant.Location
+        </div>
+        <div class="col-md-6">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">
+            Cuisine:
+        </div>
+        <div class="col-md-4">
+            @Model.Restaurant.Cuisine
+        </div>
+        <div class="col-md-6">
+        </div>
+    </div>
+</div>
+
+<br />
+@if(Model.Message != null)
+{
+    <div class="alert alert-info" >@Model.Message</div>
+}
+<a asp-page="./RestaurantList" class="btn btn-primary">See All Restaurants</a>
