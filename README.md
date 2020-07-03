@@ -2,7 +2,7 @@
 #
 This is an example code of ASP.NET Core for management my favorite restaurants.
 
-Using In Memory data
+Using the In Memory data.
 #
 If you want to run this application.
 
@@ -12,4 +12,3 @@ If you want to run this application.
   
   step 3. Run application
 #
-##
